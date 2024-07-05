@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     background-color: black; 
+ } 
+.parent_all{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text{
+    color: aliceblue;
+    width: 100%;
+   text-align: center;
+   font-size: 20px;
+   font-weight:bold;
+    font-family: monospace;
+   letter-spacing: 1px;
+   height: 50px;
+   
+}
+.kybord{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+} 
+.row{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+li{
+    height:55px;
+    width: 55px;
+    color: rgba(0,0,0,0.7);
+    border-radius:8px;
+     line-height: 55px;
+    margin: 3px;
+    transition: 0.1s;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid white;
+    
+    
+}
+.animation{
+    animation: example;
+    animation-duration: 0.2s;
+    transition: 0.2s;
+}
+@keyframes example {
+    from {background-color: deeppink;}
+    to {background-color: deeppink;}
+}
+
+
+
+
+.red{
+    background-color: red;
+    box-shadow: 3px 3px 5px 2px #6b2828cc;
+}
+.light_pink{
+    background-color: pink;
+    box-shadow: 3px 3px 5px 2px rgba(197, 58, 81, 0.63);
+}
+.tomato{
+    background-color: tomato;
+    box-shadow: 3px 3px 5px 2px rgba(197, 58, 81, 0.63);
+}
+.yellow{
+    background-color: yellow;
+    box-shadow: 3px 3px 5px 2px rgba(163, 59, 18, 0.863);
+}
+.whet,.light_whet{
+    background-color:aqua;
+    box-shadow: 3px 3px 5px 2px rgba(19, 92, 151, 0.781);
+}
+/* width */
+#SHIFT{ 
+    width: 7em;
+}
+#ENTER,#CAPSLOCK,#BACKSPACE{
+    width: 5em;
+}
+#TAB{
+    width: 4em;
+}
+.space{
+    width: 400px;
+    margin: 5px auto;
+    padding: 16px;
+    border: none;
+    font-size: 17px;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+
+
