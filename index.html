@@ -1,85 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kybord</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="parent_all">
-        <p class="text"></p>
-    <div class="kybord">
+      <textarea class="text"></textarea>
+      <div class="kybord">
         <ul class="row row_1">
-            <li class="red" id="ESCAPE">ESC</li>
-            <li class="red" id="1">1</li>
-            <li class="light_pink" id="2">2</li>
-            <li class="tomato" id="3">3</li>
-            <li class="yellow" id="4">4</li>
-            <li class="whet" id="5">5</li>
-            <li class="light_whet" id="6">6</li>
-            <li class="yellow" id="7">7</li>
-            <li class="tomato" id="8">8</li>
-            <li class="light_pink" id="9">9</li>
-            <li class="red" id="0">0</li>
-            <li class="red" id="-">-</li>
-            <li class="red" id="+">+</li>
-            <li class="red" id="BACKSPACE">BACK</li>
+          <li class="hug red">
+            <span data-name="`">`</span>
+            <span data-name="~" class="top">~</span>
+          </li>
+          <li class="red">
+            <span data-name="1">1</span>
+            <span data-name="!" class="top">!</span>
+          </li>
+          <li class="light_pink">
+            <span data-name="2">2</span>
+            <span data-name="@" class="top">@</span>
+          </li>
+          <li class="tomato">
+            <span data-name="3">3</span>
+            <span data-name="#" class="top">#</span>
+          </li>
+          <li class="yellow">
+            <span data-name="4">4</span>
+            <span data-name="$" class="top">$</span>
+          </li>
+          <li class="whet">
+            <span data-name="5">5</span>
+            <span data-name="%" class="top">%</span>
+          </li>
+          <li class="light_whaet">
+            <span data-name="6">6</span>
+            <span data-name="^" class="top">^</span>
+          </li>
+          <li class="yellow">
+            <span data-name="7">7</span>
+            <span data-name="&" class="top">&</span>
+          </li>
+          <li class="tomato">
+            <span data-name="8">8</span>
+            <span data-name="*" class="top">*</span>
+          </li>
+          <li class="light_pink">
+            <span data-name="9">9</span>
+            <span data-name="(" class="top">(</span>
+          </li>
+          <li class="red">
+            <span data-name="0">0</span>
+            <span data-name=")" class="top">)</span>
+          </li>
+          <li class="red">
+            <span data-name="-">-</span>
+            <span data-name="_" class="top">_</span>
+          </li>
+          <li class="red">
+            <span data-name="=">=</span>
+            <span data-name="+" class="top">+</span>
+          </li>
+          <li class="Backspace red">
+            <span data-name="Backspace">Back</span>
+          </li>
         </ul>
+
         <ul class="row row_2">
-            <li class="red" id="TAB">TAB</li>
-            <li class="red" id="Q">Q</li>
-            <li class="light_pink" id="W">W</li>
-            <li class="tomato" id="E">E</li>
-            <li class="yellow" id="R">R</li>
-            <li class="whet" id="T">T</li>
-            <li class="light_whet" id="Y">Y</li>
-            <li class="yellow" id="U">U</li>
-            <li class="tomato" id="I">I</li>
-            <li class="light_pink" id="O">O</li>
-            <li class="red" id="P">P</li>
-            <li class="red" id="[">[</li>
-            <li class="red" id="]">]</li>
-            <li class="red" id="\">\</li>
+          <li class="Tab red">
+            <span data-name="Tab">Tab</span>
+          </li>
+          <li class="red">
+            <span class="word_main"></span>
+          </li>
+          <li class="light_pink">
+            <span class="word_main"></span>
+          </li>
+          <li class="tomato">
+            <span class="word_main"></span>
+          </li>
+          <li class="yellow">
+            <span class="word_main"></span>
+          </li>
+          <li class="whet">
+            <span class="word_main"></span>
+          </li>
+          <li class="light_whaet">
+            <span class="word_main"></span>
+          </li>
+          <li class="yellow">
+            <span class="word_main"></span>
+          </li>
+          <li class="tomato">
+            <span class="word_main"></span>
+          </li>
+          <li class="light_pink">
+            <span class="word_main"></span>
+          </li>
+          <li class="red">
+            <span class="word_main"></span>
+          </li>
+          <li class=".BracketRight red">
+            <span class="top" data-name="{">{</span>
+            <span class="word_main"></span>
+          </li>
+          <li class="red">
+            <span class="top" data-name="}">}</span>
+            <span class="word_main"></span>
+          </li>
+          <li class="Backslash red">
+            <span class="word_main"></span>
+            <span data-name="|" class="top">|</span>
+          </li>
         </ul>
+
         <ul class="row row_3">
-            <li class="red" id="CAPSLOCK">CAPS</li>
-            <li class="red" id="A">A</li>
-            <li class="light_pink" id="S">S</li>
-            <li class="tomato " id="D">D</li>
-            <li class="yellow" id="F">F</li>
-            <li class="whet" id="G">G</li>
-            <li class="light_whet" id="H">H</li>
-            <li class="yellow" id="J">J</li>
-            <li class="tomato" id="K">K</li>
-            <li class="light_pink" id="L">L</li>
-            <li class="red" id=":">:</li>
-            <li class="red" id="'">'</li>
-            <li class="red" id="ENTER">ENTER</li>
-          
+          <li class="CAPSLOCK red">
+            <span data-name="CapsLock">Caps</span>
+          </li>
+          <li class="red">
+            <span class="word_main"></span>
+          </li>
+          <li class="light_pink">
+            <span class="word_main"> </span>
+          </li>
+
+          <li class="tomato">
+            <span class="word_main"></span>
+          </li>
+          <li class="yellow p_khat_hand">
+            <span class="word_main"></span>
+            <div class="khat_hand"></div>
+          </li>
+          <li class="whet">
+            <span class="word_main"></span>
+          </li>
+          <li class="light_whaet">
+            <span class="word_main"></span>
+          </li>
+          <li class="yellow p_khat_hand">
+            <span class="word_main"></span>
+            <div class="khat_hand"></div>
+          </li>
+          <li class="tomato">
+            <span class="word_main"></span>
+          </li>
+          <li class="light_pink">
+            <span class="word_main"></span>
+          </li>
+          <li class="hug red">
+            <span class="word_main"></span>
+            <span data-name=":" class="top">:</span>
+          </li>
+          <li class="cotishn hug red">
+            <span class="word_main"></span>
+            <span data-name='"' ="top">"</span>
+          </li>
+          <li class="red Enter">
+            <span data-name="Enter">
+              Enter<i class="bi bi-caret-left-fill"></i>
+            </span>
+          </li>
         </ul>
+
         <ul class="row row_4">
-            <li class="red"  id="SHIFT">SHIFT</li>
-            <li class="red" id="Z">Z</li>
-            <li class="light_pink" id="X">X</li>
-            <li class="tomato" id="C">C</li>
-            <li class="yellow" id="V">V</li>
-            <li class="whet" id="B">B</li>
-            <li class="light_whet" id="N">N</li>
-            <li class="yellow" id="M">M</li>
-            <li class="tomato" id=",">,</li>
-            <li class="light_pink" id=".">.</li>
-            <li class="red" id="?">?</li>
-            <li class="red" id="SHIFT">SHIFT</li>
-           
-           
+          <li class="Shift red">
+            <span data-name="ShiftLeft">Shift</span>
+          </li>
+          <li class="red">
+            <span class="word_main"></span>
+          </li>
+          <li class="light_pink">
+            <span class="word_main"></span>
+          </li>
+          <li class="tomato">
+            <span class="word_main"></span>
+          </li>
+          <li class="yellow">
+            <span class="word_main"></span>
+          </li>
+          <li class="whet">
+            <span class="word_main"></span>
+          </li>
+          <li class="light_whaet">
+            <span class="word_main"></span>
+          </li>
+          <li class="yellow">
+            <span class="word_main"></span>
+          </li>
+          <li class="tomato">
+            <span data-name="<" class="top">&lt;</span>
+            <span class="word_main"></span>
+          </li>
+          <li class="light_pink" id="dot">
+            <span data-name=">" class="top">&gt;</span>
+            <span class="word_main"></span>
+          </li>
+          <li class="red">
+            <span data-name="?" class="top">?</span>
+            <span class="word_main"></span>
+          </li>
+          <li class="Shift red">
+            <span data-name="ShiftRight">Shift</span>
+          </li>
         </ul>
-        <button id=" " class="light_whet space">space</button>
+
+        <ul class="row row_5">
+          <li class="ContrlLeft red">
+            <span data-name="ControlLeft">Ctrl</span>
+          </li>
+          <li class="red" id="windos">
+            <span data-name="Meta">
+              <i class="bi bi-windows"></i>
+            </span>
+          </li>
+          <li class="light_pink">
+            <span data-name="AltLeft">Alt</span>
+          </li>
+          <li class="light_whaet space">
+            <span data-name=" "></span>
+          </li>
+          <li class="light_pink">
+            <span data-name="AltRight">Alt</span>
+          </li>
+          <li class="Fn red">
+            Fn
+            <span data-name="ContextMenu"></span>
+          </li>
+          <li class="ContrlRight red">
+            <span data-name="ControlRight">Ctrl</span>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-<script src="app.js"></script>
-</body>
+    <div class="kadr_mesage">
+      <div class="p_mesage">
+        <p class="mesage">copy sucss</p>
+        <div class="line"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
-
-
-
